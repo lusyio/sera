@@ -1,0 +1,134 @@
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+
+// Config
+@import 'config';
+
+// Buttons
+.btn-fill {
+    padding: 16px 27px;
+    font-size: 16px;
+    line-height: 21px;
+    color: $white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: $accent;
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: $accent;
+        border-color: $accent;
+        background: transparent;
+    }
+}
+
+.btn-empty {
+    padding: 16px 27px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 21px;
+    color: $accent;
+    border: 1px solid $accent;
+    border-radius: 5px;
+    background: transparent;
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: $white;
+        background: $accent;
+        border: 1px solid transparent;
+    }
+}
+
+.header {
+    position: relative;
+    padding-top: 20px;
+    background: $lightblue;
+
+    &__inner {
+        min-height: 600px;
+        background: url(/img/main-bg.jpg) right -80px bottom 20px/650px no-repeat;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        span {
+            display: inline-block;
+            margin-left: 30px;
+            max-width: 140px;
+            font-size: 11px;
+            line-height: 13px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    &__phone {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &__mode {
+        display: inline-block;
+        position: relative;
+        padding-left: 30px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        color: $gray;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 8px;
+            height: 8px;
+            background: #69f039;
+            border-radius: 50%;
+        }
+    }
+
+    &__title {
+        margin: 100px 0 0;
+        font-size: 24px;
+        line-height: 32px;
+        color: $gray;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        margin: 0 0 40px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 0 0 40px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__btns {
+        width: 100%;
+        max-width: 480px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

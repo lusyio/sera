@@ -1,0 +1,23 @@
+{
+  "name": "sera",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o src/css src/scss",
+    "serve": "browser-sync start --server 'src' --files 'src'",
+    "watch:css": "onchange \"src/scss\" -- npm run scss",
+    "watch": "run-p serve watch:*"
+  },
+  "author": "RichBee",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}
