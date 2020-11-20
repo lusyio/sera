@@ -1,0 +1,94 @@
+// Variables
+$fontsize: 16px;
+$textcolor: #3b4256;
+$accent: #0062d5;
+$white: #fff;
+$lightblue: #f2f5fa;
+$gray: #747e89;
+
+// Fonts
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+    @font-face {
+        font-family: $fname;
+        font-style: $fstyle;
+        font-weight: $fweight;
+        font-display: swap;
+        src: local($fname), url($furl) format('woff');
+    }
+}
+
+@include font('Segoe UI', normal, 300, '../fonts/SegoeUI-Light.woff2');
+@include font('Segoe UI', normal, 400, '../fonts/SegoeUI.woff2');
+@include font('Segoe UI', normal, 600, '../fonts/SegoeUI-SemiBold.woff2');
+@include font('Segoe UI', normal, 700, '../fonts/SegoeUI-Bold.woff2');
+
+$font: 'Segoe UI', Arial, Helvetica, sans-serif;
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    min-width: 320px;
+    font-family: 'system-ui', 'Segoe UI', Tahoma;
+    font-size: $fontsize;
+    font-weight: normal;
+    color: $textcolor;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    color: inherit;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input,
+textarea {
+    outline: none;
+    &:focus:required:invalid {
+        border-color: red;
+    }
+    &:required:valid {
+        border-color: green;
+    }
+}
+
+::placeholder {
+    color: #666;
+}
+
+::selection {
+    background-color: $accent;
+    color: #fff;
+}

@@ -5,6 +5,10 @@
 // Config
 @import 'config';
 
+.hidden {
+    display: none;
+}
+
 // Buttons
 .btn-fill {
     padding: 16px 27px;
@@ -41,19 +45,36 @@
     }
 }
 
+// Titles
+.title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.subtitle {
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
 .header {
     position: relative;
     padding-top: 20px;
     background: $lightblue;
-
-    &__inner {
-        min-height: 600px;
-        background: url(/img/main-bg.jpg) right -80px bottom 20px/650px no-repeat;
-    }
+    min-height: 700px;
 
     &__logo {
         display: flex;
         align-items: center;
+
+        .icon {
+            width: 100px;
+            height: 25px;
+            fill: $textcolor;
+        }
+
         span {
             display: inline-block;
             margin-left: 30px;
@@ -99,6 +120,7 @@
 
     &__title {
         margin: 100px 0 0;
+        font-weight: normal;
         font-size: 24px;
         line-height: 32px;
         color: $gray;
@@ -120,6 +142,9 @@
     }
 
     &__img {
+        position: relative;
+        bottom: -100px;
+        right: -50px;
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -132,3 +157,103 @@
         justify-content: space-between;
     }
 }
+
+.about {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.benefits {
+    background: $lightblue;
+
+    .title {
+        margin: 40px 0 24px;
+    }
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.process {
+    &__inner {
+        display: flex;
+        align-items: center;
+        min-height: 700px;
+        background: url('../img/dest/gears.png') right -75px center / contain no-repeat;
+    }
+
+    .title {
+        margin: 0 0 24px;
+        max-width: 350px;
+    }
+}
+
+.presentation {
+    .title {
+        max-width: 450px;
+        margin: 0 0 45px;
+    }
+}
+
+.tabs {
+    &__control {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__control-btn {
+        padding: 20px 33px;
+        width: 100%;
+        max-width: 175px;
+        min-height: 175px;
+        max-height: 175px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        line-height: 21px;
+        color: $gray;
+        text-align: center;
+        border: 1px solid #c7ccd1;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background: rgba(#f2f5f9, 0.75);
+            border-color: transparent;
+            color: $textcolor;
+
+            .icon {
+                fill: $textcolor;
+            }
+        }
+
+        .icon {
+            width: 3em;
+            fill: $gray;
+            margin: 0 0 19px;
+            transition: fill 0.5s ease;
+        }
+
+        &_big {
+            padding: 50px 70px;
+            max-width: 350px;
+            flex-direction: row;
+
+            .icon {
+                margin: 0 30px 0 0;
+            }
+        }
+    }
+}
+
+
