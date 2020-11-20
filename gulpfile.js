@@ -19,7 +19,9 @@ function browsersync() {
 
 function scripts() {
    return src([
-      // 'node_modules/jquery/dist/jquery.min.js',   /* npm i --save-dev jquery */
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+      'node_modules/swiper/swiper-bundle.min.js',
       'app/js/app.js',
    ])
    .pipe(concat('app.min.js'))
@@ -30,7 +32,7 @@ function scripts() {
 
 function styles() {
    return src([
-      'node_modules/normalize.css/normalize.css',
+      'node_modules/swiper/swiper-bundle.min.css',
       'app/scss/main.scss',
    ])
    .pipe(sass())
