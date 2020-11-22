@@ -50,7 +50,10 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img class="header__img" src="img/main.png" alt="tablet">
+                    <picture>
+                        <source srcset="img/main.webp" type="image/webp">
+                        <img class="header__img" src="img/main.png" alt="Main">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -80,9 +83,12 @@
         </section>
         <section class="benefits">
             <div class="container">
-                <div class="row">
+                <div class="row benefits__inner">
                     <div class="col-lg-6">
-                        <img src="img/about.png" alt="phone">
+                        <picture>
+                            <source srcset="img/about.webp" type="image/webp">
+                            <img src="img/about.png" alt="Phone">
+                        </picture>
                     </div>
                     <div class="col-lg-6">
                         <h2 class="title">Весь бизнес <br> на одном экране</h2>
@@ -202,29 +208,20 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <picture>
-                                                <source type="image/webp"
-                                                    srcset="img/tabs/img-1.webp 1x, img/tabs/img-1@x2.webp 2x">
-                                                <img src="img/tabs/img-1.jpg"
-                                                    srcset="img/tabs/img-1.jpg 1x, img/tabs/img-1@x2.jpg 2x"
-                                                    alt="Рубеж">
+                                                <source srcset="img/tabs/img.webp" type="image/webp">
+                                                <img src="img/tabs/img.png" alt="Рубеж">
                                             </picture>
                                         </div>
                                         <div class="swiper-slide">
                                             <picture>
-                                                <source type="image/webp"
-                                                    srcset="img/tabs/img-1.webp 1x, img/tabs/img-1@x2.webp 2x">
-                                                <img src="img/tabs/img-1.jpg"
-                                                    srcset="img/tabs/img-1.jpg 1x, img/tabs/img-1@x2.jpg 2x"
-                                                    alt="Рубеж">
+                                                <source srcset="img/tabs/img.webp" type="image/webp">
+                                                <img src="img/tabs/img.png" alt="Рубеж">
                                             </picture>
                                         </div>
                                         <div class="swiper-slide">
                                             <picture>
-                                                <source type="image/webp"
-                                                    srcset="img/tabs/img-1.webp 1x, img/tabs/img-1@x2.webp 2x">
-                                                <img src="img/tabs/img-1.jpg"
-                                                    srcset="img/tabs/img-1.jpg 1x, img/tabs/img-1@x2.jpg 2x"
-                                                    alt="Рубеж">
+                                                <source srcset="img/tabs/img.webp" type="image/webp">
+                                                <img src="img/tabs/img.png" alt="Рубеж">
                                             </picture>
                                         </div>
                                     </div>
@@ -319,10 +316,15 @@
                 <h2 class="title">Все это становится возможным благодаря:</h2>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="advantages__inner">
-                            <img src="img/tablet.png" alt="tablet">
+                        <div class="advantages__inner advantages__inner_long-small">
+                            <div class="advantages__img">
+                                <picture>
+                                    <source srcset="img/tablet.webp" type="image/webp">
+                                    <img src="img/tablet.jpg" alt="Tablet">
+                                </picture>
+                            </div>
                             <div class="advantages__content">
-                                <h3 class="subtitle">Большому опыту в проектировании <br> цифровых систем</h3>
+                                <h3 class="subtitle">Большому опыту в проектировании цифровых систем</h3>
                                 <p>
                                     Мы не просто пишем код, а продумываем до мелочей каждый бизнесс-процесс и
                                     взаимодействие
@@ -362,10 +364,10 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="advantages__inner">
+                        <div class="advantages__inner advantages__inner_long-big">
                             <div class="advantages__content">
                                 <h3 class="subtitle">
-                                    Совмещением с бережливым <br> производством
+                                    Совмещением с бережливым производством
                                 </h3>
                                 <p>
                                     ЦЭРА сотрудничает с ведущими специалистами России по бережливому производству. Отбор
@@ -376,7 +378,12 @@
                                     план внедрения бережливки
                                 </p>
                             </div>
-                            <img src="img/production.jpg" alt="">
+                            <div class="advantages__img">
+                                <picture>
+                                    <source srcset="img/production.webp" type="image/webp">
+                                    <img src="img/production.png" alt="Production">
+                                </picture>
+                            </div>
                         </div>
                     </div>
                 </div>

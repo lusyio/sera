@@ -76,40 +76,24 @@
 
 @media (max-width: 991px) {
     .header {
-        &__title {
-            text-align: center;
-        }
 
         &__subtitle {
             margin: 0 0 20px;
-            text-align: center;
-        }
-
-        &__text {
-            text-align: center;
+            // text-align: center;
         }
 
         &__img {
-            max-width: 400px;
+            max-width: 500px;
             margin: 0 auto;
         }
 
         &__btns {
-            margin: 0 auto 30px;
+            margin: 0 0 30px;
         }
     }
 
     .title {
-        text-align: center;
-        margin-bottom: 20px;
-
-        br {
-            display: none;
-        }
-    }
-
-    p {
-        text-align: center;
+        margin-bottom: 15px;
     }
 
     .about {
@@ -118,7 +102,7 @@
 
     .benefits {
         img {
-            max-width: 300px;
+            max-width: 500px;
             margin: 0 auto;
         }
     }
@@ -127,14 +111,15 @@
         padding: 40px 0 40px;
 
         .title {
-            margin: 0 auto 20px;
+            margin-bottom: 15px;
         }
     }
 
     .presentation {
         padding: 0 0 40px;
+
         .title {
-            margin: 0 auto 20px;
+            margin-bottom: 15px;
         }
 
         &__text {
@@ -154,6 +139,10 @@
                 margin: 0 0 10px;
             }
         }
+
+        .btn {
+            margin: 5px 0 15px;
+        }
     }
 
 
@@ -169,16 +158,13 @@
             flex-direction: column;
             align-items: center;
         }
-
-        h3 {
-            text-align: center;
-        }
     }
 
     .feedback {
         padding: 0 0 40px;
+
         .title {
-            margin: 0 0 20px;
+            margin: 0 0 15px;
         }
 
         &__input {
@@ -217,6 +203,10 @@
     .header {
         padding-bottom: 0;
 
+        &__topline {
+            margin-bottom: 40px;
+        }
+
         &__subtitle {
             margin-bottom: 20px;
         }
@@ -241,15 +231,16 @@
             margin-bottom: 20px;
             max-width: 400px;
         }
-
-        &__img {
-            max-width: 300px;
-        }
     }
 
     .title {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 24px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        line-height: 22px;
     }
 
     .presentation {
@@ -318,14 +309,10 @@
             font-size: 14px;
         }
 
-        &__btns {
+        &__img {
             max-width: 300px;
-            flex-direction: column;
-
-            .btn-fill {
-                margin-bottom: 15px;
-            }
         }
+
 
         .logo {
             span {
@@ -354,6 +341,17 @@
             &:last-of-type {
                 padding: 10px;
             }
+        }
+
+        .tab-pane {
+            padding: 15px;
+        }
+    }
+
+    .advantages {
+
+        &__content {
+            padding: 15px;
         }
     }
 
@@ -397,6 +395,18 @@
             height: 80px;
             top: 130px;
             right: 164px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        &__btns {
+            flex-direction: column;
+
+            .btn-fill {
+                margin-bottom: 15px;
+            }
         }
     }
 }
