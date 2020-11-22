@@ -26,18 +26,22 @@
 }
 
 // Buttons
-.btn-fill {
+
+.btn {
     padding: 16px 27px;
     font-size: 16px;
     line-height: 21px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.btn-fill {
     color: $white;
     border: 1px solid transparent;
-    border-radius: 5px;
     background: $accent;
-    transition: background 0.5s ease;
 
     &:hover {
-        background: #004FAB;
+        background: #004fab;
     }
 
     &:active {
@@ -46,33 +50,27 @@
 
     &:focus {
         outline: 0;
-        box-shadow: 0 0 5px rgba($accent, .5);
+        box-shadow: 0 0 5px rgba($accent, 0.5);
     }
 }
 
 .btn-empty {
-    padding: 16px 27px;
-    border-radius: 5px;
-    font-size: 16px;
-    line-height: 21px;
     color: $accent;
     border: 1px solid $accent;
-    border-radius: 5px;
     background: transparent;
-    transition: all 0.5s ease;
 
     &:hover {
-        background: #F2F6FB;
+        background: #f2f6fb;
     }
 
     &:active {
-        background: #E5EEF7;
+        background: #e5eef7;
     }
 
     &:focus {
         outline: 0;
         border-color: transparent;
-        box-shadow: 0 0 5px rgba($accent, .5);
+        box-shadow: 0 0 5px rgba($accent, 0.5);
     }
 }
 
@@ -92,9 +90,6 @@
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-
     .icon {
         width: 100px;
         height: 25px;
@@ -103,6 +98,7 @@
 
     span {
         display: inline-block;
+        vertical-align: middle;
         margin-left: 30px;
         max-width: 140px;
         font-size: 11px;
@@ -112,8 +108,15 @@
 
 .header {
     position: relative;
-    padding: 20px 0 90px;
+    padding: 12px 0 18px;
     background: $lightblue;
+
+    &__topline {
+        margin-bottom: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &__info {
         display: flex;
@@ -150,7 +153,7 @@
     }
 
     &__title {
-        margin: 100px 0 0;
+        margin: 0 0 5px;
         font-weight: normal;
         font-size: 24px;
         line-height: 32px;
@@ -167,18 +170,15 @@
     }
 
     &__text {
-        margin: 0 0 40px;
+        margin: 0 0 45px;
         font-size: 18px;
         line-height: 24px;
     }
 
     &__img {
-        position: relative;
-        bottom: -100px;
-        right: -50px;
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     &__btns {
@@ -190,7 +190,8 @@
 }
 
 .about {
-    min-height: 250px;
+    min-height: 135px;
+    padding: 46px 0 60px;
     display: flex;
     align-items: center;
 
@@ -214,11 +215,11 @@
 }
 
 .process {
+    padding: 80px 0 80px;
+
     &__inner {
         display: flex;
         align-items: center;
-        min-height: 500px;
-        // background: url('../img/dest/gears.png') right -75px center / contain no-repeat;
     }
 
     .title {
@@ -227,28 +228,81 @@
     }
 }
 
-.presentation {
-    .title {
-        max-width: 450px;
-        margin: 0 0 45px;
+.gears {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 400px;
+    overflow: hidden;
+
+    .gear {
+        position: absolute;
+        animation-name: rotate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .gear-1 {
+        width: 230px;
+        height: 230px;
+        top: 0;
+        right: 0px;
+    }
+
+    .gear-2 {
+        width: 250px;
+        height: 250px;
+        top: 15px;
+        right: 230px;
+    }
+
+    .gear-3 {
+        width: 200px;
+        height: 200px;
+        top: 145px;
+        right: 130px;
+    }
+
+    .gear-4 {
+        width: 150px;
+        height: 150px;
+        top: 200px;
+        right: 260px;
     }
 }
 
-.tabs {
-    padding-bottom: 80px;
-    &__control {
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.presentation {
+    padding: 0 0 80px;
+
+    .title {
+        max-width: 450px;
+        margin: 0px 0 42px;
+    }
+
+    .nav-tabs {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 15px;
     }
 
-    &__control-btn {
-        padding: 20px 33px;
+    .nav-item {
+        padding: 32px 34px;
         width: 100%;
         max-width: 175px;
-        min-height: 175px;
         max-height: 175px;
+        min-height: 175px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -271,34 +325,20 @@
         }
 
         .icon {
-            width: 3em;
+            width: 2.75em;
+            height: 2.75em;
             fill: $gray;
             margin: 0 0 19px;
             transition: fill 0.5s ease;
         }
 
-        &_big {
-            padding: 50px 70px;
+        &:last-of-type {
             max-width: 350px;
             flex-direction: row;
 
             .icon {
                 margin: 0 30px 0 0;
             }
-        }
-    }
-
-    .swiper-slide {
-        img {
-            width: 100%;
-        }
-
-        p {
-            margin: 0 !important;
-            font-size: 12px;
-            line-height: 16px;
-            text-align: center;
-            color: #858e98;
         }
     }
 
@@ -318,12 +358,46 @@
 
         p {
             margin: 0 0 20px;
+            line-height: 21px;
         }
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            max-width: 460px;
+        }
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #858e98;
     }
 }
 
 .advantages {
     padding-bottom: 80px;
+
+    &__inner {
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        min-height: 260px;
+        background-color: $lightblue;
+
+        img {
+            max-width: 550px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
 
     .title {
         max-width: 500px;
@@ -335,17 +409,7 @@
     }
 
     p {
-        max-width: 410px;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .row:nth-of-type(odd) {
-        background-color: $lightblue;
+        max-width: 450px;
     }
 
     .row:not(:last-of-type) {
@@ -384,7 +448,7 @@
     }
 
     &__textarea {
-        min-width: 144px;
+        min-height: 144px;
         margin-bottom: 20px;
         padding: 20px 30px;
         border: 1px solid #c7ccd1;
@@ -436,23 +500,22 @@
         height: 24px;
         flex-shrink: 0;
         flex-grow: 0;
-        border: 1px solid #C7CCD1;
+        border: 1px solid #c7ccd1;
         border-radius: 2px;
         margin-right: 15px;
     }
 
-    input[type="checkbox"]:checked + label::before {
-        background: url("/svg/check.svg") center / 30px no-repeat;
-     }
+    input[type='checkbox']:checked + label::before {
+        background: url('/svg/check.svg') center / 30px no-repeat;
+    }
 
-     input[type="checkbox"]:focus+label::before {
+    input[type='checkbox']:focus + label::before {
         border: 1px solid #000;
-     }
+    }
 
-     input[type="checkbox"]:focus:not(:checked)+label::before {
+    input[type='checkbox']:focus:not(:checked) + label::before {
         border-color: #000;
-     }
-
+    }
 }
 
 .footer {
@@ -467,7 +530,9 @@
     }
 
     .logo {
+        display: flex;
         flex-direction: column;
+        align-items: center;
 
         .icon {
             margin-bottom: 15px;
@@ -477,7 +542,6 @@
             margin: 0 0 25px;
             text-align: center;
         }
-
     }
     &__phone {
         margin-bottom: 25px;
@@ -493,56 +557,4 @@
     }
 }
 
-.gears {
-    position: relative;
-    height: 100%;
-
-    #gear1 {
-        position: absolute;
-        top: 50px;
-        left: 50px;
-        animation-name: rotate;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-
-    #gear2 {
-        position: absolute;
-        top: 50px;
-        right: 70px;
-        animation-name: rotate;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-
-    #gear3 {
-        position: absolute;
-        bottom: -42px;
-        right: 156px;
-        animation-name: rotate;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-
-    #gears4 {
-        position: absolute;
-        top: -18px;
-        right: 4px;
-        animation-name: rotate;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+@import 'media';

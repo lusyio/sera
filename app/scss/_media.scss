@@ -1,0 +1,402 @@
+@media (max-width: 1199px) {
+    .header {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__subtitle {
+            font-size: 36px;
+            line-height: 40px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__btns {
+            max-width: 400px;
+        }
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .presentation {
+        .nav-item {
+            margin-right: 10px;
+            padding: 15px;
+            max-width: calc(20% - 10px);
+            max-height: 125px;
+            min-height: 125px;
+            font-size: 14px;
+            line-height: 16px;
+
+            &:last-of-type {
+                margin-right: 0;
+                flex-direction: column;
+                padding: 15px;
+                max-width: 20%;
+                font-size: 14px;
+                line-height: 16px;
+
+                .icon {
+                    width: 2em;
+                    height: 2em;
+                    margin: 0 0 10px;
+                }
+            }
+
+            .icon {
+                width: 2em;
+                height: 2em;
+                margin: 0 0 10px;
+            }
+        }
+
+        .tab-content {
+            h3 {
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        &__title {
+            text-align: center;
+        }
+
+        &__subtitle {
+            margin: 0 0 20px;
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__img {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        &__btns {
+            margin: 0 auto 30px;
+        }
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 20px;
+
+        br {
+            display: none;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .about {
+        padding: 20px 0 40px;
+    }
+
+    .benefits {
+        img {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    .process {
+        padding: 40px 0 40px;
+
+        .title {
+            margin: 0 auto 20px;
+        }
+    }
+
+    .presentation {
+        padding: 0 0 40px;
+        .title {
+            margin: 0 auto 20px;
+        }
+
+        &__text {
+            text-align: center !important;
+        }
+
+        .tab-pane {
+            padding: 30px;
+        }
+
+        .tab-content {
+            h3 {
+                margin: 0 0 10px;
+            }
+
+            p {
+                margin: 0 0 10px;
+            }
+        }
+    }
+
+
+    .advantages {
+        padding-bottom: 40px;
+
+        .title {
+            margin: 0 0 20px;
+        }
+
+        &__inner {
+            min-height: 210px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .feedback {
+        padding: 0 0 40px;
+        .title {
+            margin: 0 0 20px;
+        }
+
+        &__input {
+            padding: 10px 15px;
+            font-size: 14px;
+
+            &::placeholder {
+                font-size: 14px;
+            }
+        }
+
+        &__textarea {
+            padding: 10px 15px;
+            font-size: 14px;
+
+            &::placeholder {
+                font-size: 14px;
+            }
+        }
+
+        &__form-group {
+            label {
+                max-width: 250px;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        padding-bottom: 0;
+
+        &__subtitle {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            margin: 0 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+                display: block;
+                margin: 5px 0 0;
+                text-align: center;
+            }
+        }
+
+        &__btns {
+            margin-bottom: 20px;
+            max-width: 400px;
+        }
+
+        &__img {
+            max-width: 300px;
+        }
+    }
+
+    .title {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .presentation {
+        .nav-tabs {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+        .nav-item {
+            flex-direction: row;
+            justify-content: flex-start;
+            max-width: 100%;
+            min-height: 30px;
+            padding: 10px 30px;
+            margin: 0 0 5px;
+
+            .icon {
+                margin: 0 20px 0 0;
+            }
+
+            &:last-of-type {
+                max-width: 100%;
+                padding: 10px 30px;
+                flex-direction: row;
+
+                .icon {
+                    margin: 0 20px 0 0;
+                }
+            }
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .footer {
+        .logo {
+            .icon {
+                margin: 0 0 5px;
+            }
+
+            span {
+                margin: 0 0 10px;
+            }
+        }
+
+        &__phone {
+            margin: 0 0 10px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        &__title {
+            font-size: 16px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__btns {
+            max-width: 300px;
+            flex-direction: column;
+
+            .btn-fill {
+                margin-bottom: 15px;
+            }
+        }
+
+        .logo {
+            span {
+                font-size: 10px;
+            }
+        }
+
+        &__phone {
+            font-size: 16px;
+        }
+
+        &__mode {
+            font-size: 10px;
+            padding-left: 10px;
+        }
+    }
+
+    .about {
+        padding: 0px 0 30px;
+    }
+
+    .presentation {
+        .nav-item {
+            padding: 10px;
+
+            &:last-of-type {
+                padding: 10px;
+            }
+        }
+    }
+
+    .feedback {
+        &__form-group {
+            flex-direction: column;
+        }
+
+        .btn {
+            margin-top: 15px;
+        }
+    }
+
+    .gears {
+        max-width: 300px;
+        min-height: 250px;
+
+        .gear-1 {
+            width: 140px;
+            height: 140px;
+            top: 0;
+            right: 0px;
+        }
+
+        .gear-2 {
+            width: 150px;
+            height: 150px;
+            top: 15px;
+            right: 140px;
+        }
+
+        .gear-3 {
+            width: 120px;
+            height: 120px;
+            top: 90px;
+            right: 80px;
+        }
+
+        .gear-4 {
+            width: 80px;
+            height: 80px;
+            top: 130px;
+            right: 164px;
+        }
+    }
+}

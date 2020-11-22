@@ -5,7 +5,6 @@ const uglify         = require('gulp-uglify-es').default;
 const sass           = require('gulp-sass');
 const autoprefixer   = require('gulp-autoprefixer');
 const cleancss       = require('gulp-clean-css');
-const imagemin       = require('gulp-imagemin');
 const newer          = require('gulp-newer');
 const del            = require('del');
 
@@ -44,14 +43,7 @@ function styles() {
 }
 
 function images() {
-   return src('app/img/src/**/*')
-   .pipe(newer('app/img/dest/'))
-   .pipe(imagemin())
-   .pipe(dest('app/img/dest'));
-}
-
-function cleanimg() {
-   return del('app/img/dest/**/*', { force: true });
+   return src('app/img/**/*')
 }
 
 function cleandist() {
@@ -66,7 +58,7 @@ function buildcopy() {
       'app/svg/**/*.svg',
       'app/fonts/**/*.woff2',
       'app/favicon/*.ico',
-      'app/img/dest/**/*',
+      'app/img/**/*',
    ], { base: 'app' })
    .pipe(dest('dist'));
 }
@@ -75,14 +67,13 @@ function startwatch() {
    watch(['app/**/**/*.scss'], styles);
    watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
    watch('app/**/*.html').on('change', browserSync.reload);
-   watch('app/img/src/**/*', images);
+   watch('app/img/**/*', images);
 }
 
 exports.browsersync = browsersync;
 exports.scripts     = scripts;
 exports.styles      = styles;
 exports.images      = images;
-exports.cleanimg    = cleanimg;
 exports.build       = series(cleandist, styles, scripts, images, buildcopy);
 
 exports.default     = parallel(styles, scripts, images, browsersync, startwatch);
