@@ -33,6 +33,7 @@
     line-height: 21px;
     border-radius: 5px;
     transition: all 0.5s ease;
+    text-align: center;
 }
 
 .btn-fill {
@@ -41,6 +42,7 @@
     background: $accent;
 
     &:hover {
+        color: white;
         background: #004fab;
     }
 
@@ -60,6 +62,7 @@
     background: transparent;
 
     &:hover {
+        color: $accent;
         background: #f2f6fb;
     }
 
@@ -246,6 +249,7 @@
         // animation-duration: 8s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
+        fill: $lightblue;
     }
 
     .gear-1 {
@@ -412,7 +416,7 @@
                 height: 60px;
                 margin-bottom: 25px;
                 fill: $textcolor;
-                transition: all .3s;
+                transition: all 0.3s;
 
                 &:hover {
                     fill: $accent;
@@ -616,6 +620,82 @@
         font-size: 14px;
         line-height: 13px;
         color: $gray;
+    }
+}
+
+.modal {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $textcolor;
+    z-index: 99;
+
+    &__close {
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            fill: #f7f7f7;
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding-left: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 140px;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    &__img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    &__text {
+        max-width: 255px;
+        color: $white;
+
+        span {
+            display: block;
+
+            &:first-of-type {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 16px;
+            }
+
+            &:last-of-type {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .btn-empty {
+        color: $white;
+        border-color: $white;
+        font-size: 16px;
+        background-color: transparent;
+
+        &:hover {
+            border-color: $lightblue;
+            color: $lightblue;
+        }
     }
 }
 
