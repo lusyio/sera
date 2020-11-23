@@ -254,6 +254,7 @@
         top: 0;
         right: 0px;
         animation-duration: 10s;
+        animation-direction: reverse;
     }
 
     .gear-2 {
@@ -371,13 +372,52 @@
     }
 
     .swiper-slide {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
 
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+        }
+
         img {
             width: 100%;
             max-width: 460px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(242, 245, 249, 0.9);
+            transition: opacity 0.5s;
+            opacity: 0;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            svg {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 25px;
+                fill: $textcolor;
+                transition: all .3s;
+
+                &:hover {
+                    fill: $accent;
+                }
+            }
         }
     }
 
