@@ -624,12 +624,17 @@
 }
 
 .modal {
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: $textcolor;
     z-index: 99;
+
+    &.show {
+        display: block;
+    }
 
     &__close {
         padding: 10px;
