@@ -63,7 +63,7 @@
 
     &:hover {
         color: $accent;
-        background: #f2f6fb;
+        background: #e5eef7;
     }
 
     &:active {
@@ -167,7 +167,7 @@
     &__subtitle {
         margin: 0 0 40px;
         font-weight: bold;
-        font-size: 48px;
+        font-size: 47px;
         line-height: 58px;
         text-transform: uppercase;
     }
@@ -695,11 +695,12 @@
         color: $white;
         border-color: $white;
         font-size: 16px;
-        background-color: transparent;
+        background-color: $textcolor;
 
         &:hover {
-            border-color: $lightblue;
+            border-color: rgba($lightblue, 0.5);
             color: $lightblue;
+            // opacity: .5;
         }
     }
 }
