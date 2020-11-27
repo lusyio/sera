@@ -624,16 +624,16 @@
 }
 
 .modal {
-    display: none;
     position: fixed;
-    bottom: 0;
+    bottom: -100%;
     left: 0;
     width: 100%;
     background-color: $textcolor;
     z-index: 99;
+    transition: all 1s linear;
 
     &.show {
-        display: block;
+        bottom: 0;
     }
 
     &__close {
