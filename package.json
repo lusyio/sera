@@ -22,6 +22,7 @@
   "dependencies": {
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
+    "jquery.maskedinput": "^1.4.1",
     "swiper": "^6.3.5"
   }
 }

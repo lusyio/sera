@@ -421,7 +421,7 @@
                     <form id="feedbackSubmit" action="" class="feedback__form">
                         <input class="feedback__input" type="text" name="name" placeholder="Как к вам обращаться?"
                                required>
-                        <input class="feedback__input" type="tel" name="phone"
+                        <input id="phone" class="feedback__input" type="tel" name="phone"
                                placeholder="Укажите номер телефона для связи" required>
                         <textarea class="feedback__textarea" name="message"
                                   placeholder="Опишите основные задачи оцифровки"></textarea>
@@ -474,6 +474,16 @@
         </div>
         <a href="#feedback" class="btn btn-empty">Обсудить проект</a>
     </div>
+</div>
+
+<div class="success-message">
+    <span class="success-message-close">&times;</span>
+    Ваше сообщение успешно отправлено!
+</div>
+
+<div class="error-message">
+    <span class="error-message-close">&times;</span>
+    Ошибка! Мы не смогли отправить ваше сообщение!
 </div>
 
 <svg width="0" height="0" class="hidden">
