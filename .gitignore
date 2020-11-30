@@ -2,7 +2,6 @@
 
 *.htaccess
 
-
 ### macOS ###
 # General
 .DS_Store
@@ -153,3 +152,4 @@ fabric.properties
 
 .htaccess
 node_modules
+app/conf.php

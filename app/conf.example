@@ -1,0 +1,8 @@
+<?php
+// Настройки телеграма
+// Апи-ключ
+$telegramApiKey = '';
+// url прокси-скрипта
+$telegramProxyUrl = '';
+// id чата (можно узнать через @userinfobot)
+$telegramOfferChatId = '';
