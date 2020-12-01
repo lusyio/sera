@@ -62,12 +62,14 @@ errorMessageClose.addEventListener('click', () => {
 
 
 jQuery(($) => {
-    $('#feedbackSubmit').on('submit', (e) => {
+    $("#phone").mask("+9 (999) 999-9999");
+    const $form = $('#feedbackSubmit')
+    $form.on('submit', (e) => {
         e.preventDefault()
         const data = {
             action: 'offer'
         }
-        $('#feedbackSubmit').serializeArray().map((item) => {
+        $form.serializeArray().map((item) => {
             data[item.name] = item.value
         })
         $.ajax({
@@ -75,17 +77,12 @@ jQuery(($) => {
             url: '/ajax.php',
             data,
             success: data => {
-                console.log(data)
+                $form[0].reset()
                 successMessage.classList.add('show')
             },
             error: e => {
-                console.log(e)
                 errorMessage.classList.add('show')
             }
         });
     })
 })
-
-jQuery(($) => {
-    $("#phone").mask("+7 (999) 999-9999");
-});
