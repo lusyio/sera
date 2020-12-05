@@ -39,15 +39,15 @@
         </div>
         <div class="row">
             <div class="col-lg-6 pr-lg-0 pr-auto">
-                <div class="header__img wow animate__fadeIn">
-                    <div class="header__title">проектируем и разрабатываем</div>
-                    <h1 class="header__subtitle">цифровые системы для бизнеса</h1>
-                    <p class="header__text">Решаем индивидуальные задачи бизнеса, когда коробочные решения не
+                <div class="header__img">
+                    <div class="header__title wow animate__fadeIn" data-wow-delay=".3s">проектируем и разрабатываем</div>
+                    <h1 class="header__subtitle wow animate__fadeIn" data-wow-delay=".6s">цифровые системы для бизнеса</h1>
+                    <p class="header__text wow animate__fadeIn" data-wow-delay=".9s">Решаем индивидуальные задачи бизнеса, когда коробочные решения не
                         справляются. Разрабатываем
                         кастомные ERP, CRM, BPM системы, личные кабинеты и сервисы</p>
                     <div class="header__btns">
-                        <a href="#feedback" class="btn btn-fill">Обсудить проект</a>
-                        <a href="#presentation" class="btn btn-empty">Посмотреть примеры систем</a>
+                        <a href="#feedback" class="btn btn-fill wow animate__fadeIn" data-wow-delay="1.2s">Обсудить проект</a>
+                        <a href="#presentation" class="btn btn-empty wow animate__fadeIn" data-wow-delay="1.4s">Посмотреть примеры систем</a>
                     </div>
                 </div>
             </div>
