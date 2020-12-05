@@ -28,7 +28,7 @@
                         <svg class="icon">
                             <use xlink:href="#logo"></use>
                         </svg>
-                        <span>Центр эффективных решений и автоматизации</span>
+                        <span>Центр эффективных <br> решений и автоматизации</span>
                     </a>
                     <div class="header__info">
                         <a href="tel:84951978288" class="header__phone">8 (495) 197-82-88</a>
@@ -447,7 +447,7 @@
                         <svg class="icon">
                             <use xlink:href="#logo"></use>
                         </svg>
-                        <span>Центр эффективных решений и автоматизации</span>
+                        <span>Центр эффективных <br> решений и автоматизации</span>
                     </a>
                     <a href="tel:84951978288" class="footer__phone">8 (495) 197-82-88</a>
                     <a href="#" class="footer__policy">Политика конфиденциальности</a>
