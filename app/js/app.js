@@ -25,41 +25,46 @@ for (let anchor of anchors) {
 
 // Modal
 
-const modal = document.querySelector(".modal");
-const closeBtn = document.querySelector(".modal__close");
-let canOpened = true;
+function bindModal(modalSelector, closeSelector) {
 
-window.addEventListener("scroll", function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const modal = document.querySelector(modalSelector);
+    const closeBtn = document.querySelector(closeSelector);
+    let canOpened = true;
 
-    if (scrollTop > 500 && canOpened) {
-        modal.classList.add("show");
-    } else if (scrollTop < 500 && canOpened) {
+    window.addEventListener("scroll", function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+        if (scrollTop > 500 && canOpened) {
+            modal.classList.add("show");
+        } else if (scrollTop < 500 && canOpened) {
+            modal.classList.remove("show");
+        } else if (!canOpened) {
+            modal.classList.remove("show");
+        }
+    });
+    
+    closeBtn.addEventListener("click", () => {
         modal.classList.remove("show");
-    } else if (!canOpened) {
-        modal.classList.remove("show");
-    }
-});
+        canOpened = false;
+    });
+}
 
-closeBtn.addEventListener("click", () => {
-    modal.classList.remove("show");
-    canOpened = false;
-});
+bindModal(".modal", ".modal__close");
 
 
-const successMessage = document.querySelector('.success-message');
-const successMessageClose = document.querySelector('.success-message-close');
-const errorMessage = document.querySelector('.error-message');
-const errorMessageClose = document.querySelector('.error-message-close');
+function showSubmitMessage(messageSelector, closeSelector) {
 
-successMessageClose.addEventListener('click', () => {
-    successMessage.classList.remove('show');
-})
+    const message = document.querySelector(messageSelector);
+    const close = document.querySelectorAll(closeSelector);
 
-errorMessageClose.addEventListener('click', () => {
-    errorMessage.classList.remove('show');
-})
+    message.classList.add('show');
 
+    close.forEach(item => {
+        item.addEventListener('click', () => {
+            message.classList.remove('show')
+        })
+    })
+}
 
 jQuery(($) => {
     $("#phone").mask("+9 (999) 999-9999");
@@ -78,11 +83,21 @@ jQuery(($) => {
             data,
             success: data => {
                 $form[0].reset()
-                successMessage.classList.add('show')
+                showSubmitMessage('.success-message', '.message-close')
             },
             error: e => {
-                errorMessage.classList.add('show')
+                showSubmitMessage('.error-message', '.message-close')
             }
         });
     })
 })
+
+var wow = new WOW(
+    {
+      boxClass:     'wow',
+      animateClass: 'animate__animated',
+      offset:       100,
+      mobile:       false,
+    }
+);
+wow.init();

@@ -20,9 +20,11 @@
     "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "jquery.maskedinput": "^1.4.1",
-    "swiper": "^6.3.5"
+    "swiper": "^6.3.5",
+    "wowjs": "^1.1.3"
   }
 }

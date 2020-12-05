@@ -22,6 +22,7 @@ function scripts() {
       'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
       'node_modules/swiper/swiper-bundle.min.js',
       'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
+      'node_modules/wowjs/dist/wow.min.js',
       'app/js/app.js',
    ])
    .pipe(concat('app.min.js'))
@@ -33,6 +34,7 @@ function scripts() {
 function styles() {
    return src([
       'node_modules/swiper/swiper-bundle.min.css',
+      'node_modules/animate.css/animate.min.css',
       'app/scss/main.scss',
    ])
    .pipe(sass())
