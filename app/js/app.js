@@ -96,7 +96,7 @@ var wow = new WOW(
     {
       boxClass:     'wow',
       animateClass: 'animate__animated',
-      offset:       100,
+      offset:       150,
       mobile:       false,
     }
 );

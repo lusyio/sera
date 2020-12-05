@@ -23,7 +23,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-12">
-                <div class="header__topline wow animate__backInDown">
+                <div class="header__topline wow animate__fadeInDown">
                     <a href="#" class="logo">
                         <svg class="icon">
                             <use xlink:href="#logo"></use>
@@ -39,7 +39,7 @@
         </div>
         <div class="row">
             <div class="col-lg-6 pr-lg-0 pr-auto">
-                <div class="header__img wow animate__slideInLeft">
+                <div class="header__img wow animate__fadeIn">
                     <div class="header__title">проектируем и разрабатываем</div>
                     <h1 class="header__subtitle">цифровые системы для бизнеса</h1>
                     <p class="header__text">Решаем индивидуальные задачи бизнеса, когда коробочные решения не
@@ -54,7 +54,7 @@
             <div class="col-lg-6">
                 <picture>
                     <source srcset="img/main.webp" type="image/webp">
-                    <img class="header__img wow animate__backInRight" src="img/main.png" alt="Main">
+                    <img class="header__img wow animate__fadeIn" src="img/main.png" alt="Main">
                 </picture>
             </div>
         </div>
@@ -69,10 +69,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2 class="title wow animate__slideInLeft">Оцифровка проще <br> и доступнее, чем кажется</h2>
+                    <h2 class="title wow animate__fadeIn">Оцифровка проще <br> и доступнее, чем кажется</h2>
                 </div>
                 <div class="col-lg-6">
-                    <p class="wow animate__slideInRight">
+                    <p class="wow animate__fadeIn">
                         <span>«Индустрия 4.0»</span> и <span>«Цифровая трансформация»</span> - термины, которые
                         сыпятся на нас со всех сторон.
                         Но когда мы их слышим, то в голове представляются огромные заводы и крупное сложное
@@ -89,12 +89,12 @@
                 <div class="col-lg-6">
                     <picture>
                         <source srcset="img/about.webp" type="image/webp">
-                        <img class="wow animate__backInLeft animate__slow" src="img/about.png" alt="Phone">
+                        <img class="wow animate__fadeIn" src="img/about.png" alt="Phone">
                     </picture>
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="title wow animate__slideInRight">Весь бизнес <br> на одном экране</h2>
-                    <p class="wow animate__slideInRight">
+                    <h2 class="title wow animate__fadeIn">Весь бизнес <br> на одном экране</h2>
+                    <p class="wow animate__fadeIn">
                         Проект ЦЭРА был создан для того, чтобы помочь малому и среднему бизнесу выйти на новый
                         уровень и попробовать все преимущества оцифровки. Это просто, доступно и даже интересно!
                         Ведь у вас на одном экране появляются все данные о вашем предприятии, которые вы можете
@@ -110,8 +110,8 @@
             <div class="process__inner">
                 <div class="row">
                     <div class="col-lg-6 order-1 order-lg-0">
-                        <h2 class="title wow animate__slideInLeft">Простое внедрение в жизнь компании</h2>
-                        <p class="wow animate__slideInLeft">
+                        <h2 class="title wow animate__fadeIn">Простое внедрение в жизнь компании</h2>
+                        <p class="wow animate__fadeIn">
                             Процесс цифровой трансформации достаточно длителен, так как в нем не существует конечной
                             точки. Это постоянное совершенствование и внедрение новых идей и функций. Поэтому мы
                             предлагаем поэтапный подход, в ходе которого функционал разрабатывается и внедряется
@@ -123,7 +123,7 @@
                         </p>
                     </div>
                     <div class="col-lg-6">
-                        <div class="gears wow animate__backInRight animate__slow">
+                        <div class="gears wow animate__fadeIn">
                             <svg class="icon gear gear-1">
                                 <use xlink:href="#gear-1"></use>
                             </svg>
@@ -144,37 +144,37 @@
     </section>
     <section id="presentation" class="presentation">
         <div class="container">
-            <h2 class="title wow animate__fadeInLeft">Посмотрите, как легко это получилось у других</h2>
+            <h2 class="title wow animate__fadeIn">Посмотрите, как легко это получилось у других</h2>
             <nav class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active wow animate__zoomIn" id="nav-home-tab" data-toggle="tab" href="#tab-1" role="tab"
+                <a class="nav-item nav-link active wow animate__fadeIn" id="nav-home-tab" data-toggle="tab" href="#tab-1" role="tab"
                    aria-controls="nav-home" aria-selected="true">
                     <svg class="icon">
                         <use xlink:href="#mine"></use>
                     </svg>
                     Добыча <br> сырья
                 </a>
-                <a class="nav-item nav-link wow animate__zoomIn" data-wow-delay="1s" id="nav-profile-tab" data-toggle="tab" href="#tab-2" role="tab"
+                <a class="nav-item nav-link wow animate__fadeIn" data-wow-delay=".3s" id="nav-profile-tab" data-toggle="tab" href="#tab-2" role="tab"
                    aria-controls="nav-profile" aria-selected="false">
                     <svg class="icon">
                         <use xlink:href="#truck"></use>
                     </svg>
                     Логистика <br> и закупки
                 </a>
-                <a class="nav-item nav-link wow animate__zoomIn" data-wow-delay="2s" id="nav-profile-tab" data-toggle="tab" href="#tab-3" role="tab"
+                <a class="nav-item nav-link wow animate__fadeIn" data-wow-delay=".6s" id="nav-profile-tab" data-toggle="tab" href="#tab-3" role="tab"
                    aria-controls="nav-profile" aria-selected="false">
                     <svg class="icon">
                         <use xlink:href="#employee"></use>
                     </svg>
                     Электронный <br> документооборот
                 </a>
-                <a class="nav-item nav-link wow animate__zoomIn" data-wow-delay="3s" id="nav-profile-tab" data-toggle="tab" href="#tab-4" role="tab"
+                <a class="nav-item nav-link wow animate__fadeIn" data-wow-delay=".9s" id="nav-profile-tab" data-toggle="tab" href="#tab-4" role="tab"
                    aria-controls="nav-profile" aria-selected="false">
                     <svg class="icon">
                         <use xlink:href="#cop"></use>
                     </svg>
                     Охранная <br> компания
                 </a>
-                <a class="nav-item nav-link wow animate__zoomIn" data-wow-delay="4s" id="nav-profile-tab" data-toggle="tab" href="#tab-5" role="tab"
+                <a class="nav-item nav-link wow animate__fadeIn" data-wow-delay="1.2s" id="nav-profile-tab" data-toggle="tab" href="#tab-5" role="tab"
                    aria-controls="nav-profile" aria-selected="false">
                     <svg class="icon">
                         <use xlink:href="#idea"></use>
@@ -339,10 +339,10 @@
 
     <section class="advantages">
         <div class="container">
-            <h2 class="title wow animate__fadeInLeft">Все это становится возможным благодаря:</h2>
+            <h2 class="title wow animate__fadeIn">Все это становится возможным благодаря:</h2>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="advantages__inner advantages__inner_long-small wow animate__fadeInRight">
+                    <div class="advantages__inner advantages__inner_long-small wow animate__fadeIn">
                         <div class="advantages__img">
                             <picture>
                                 <source srcset="img/tablet.webp" type="image/webp">
@@ -362,7 +362,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="advantages__inner wow animate__fadeInLeft">
+                    <div class="advantages__inner wow animate__fadeIn">
                         <div class="advantages__content">
                             <h3 class="subtitle">Интеграциям с другими сервисами</h3>
                             <p>
@@ -374,7 +374,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="advantages__inner wow animate__fadeInRight">
+                    <div class="advantages__inner wow animate__fadeIn">
                         <div class="advantages__content">
                             <h3 class="subtitle">Своему штату разработчиков в Москве</h3>
                             <p>
@@ -390,7 +390,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="advantages__inner advantages__inner_long-big wow animate__fadeInLeft">
+                    <div class="advantages__inner advantages__inner_long-big wow animate__fadeIn">
                         <div class="advantages__content">
                             <h3 class="subtitle">
                                 Совмещением с бережливым производством
