@@ -375,21 +375,23 @@
     }
 
     .swiper-slide {
+        padding: 25px 0;
         margin-bottom: 10px;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
         &:hover {
             .overlay {
                 opacity: 1;
             }
         }
-
+        
         img {
             width: 100%;
-            max-width: 460px;
+            max-width: 425px;
+            filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
         }
 
         .overlay {

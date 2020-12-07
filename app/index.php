@@ -257,13 +257,13 @@
                                 Заказы формируются внутри системы, автоматическая генерация документов на каждом из этапов заказа и доставки, автоматизированное сравнение цен от поставщиков и выбор наилучшего
                             </p>
                         </div>
-                        <!-- <div class="col-lg-6">
+                        <div class="col-lg-6">
                             <div id="autolong" class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <picture>
                                             <source srcset="img/slider/autolong.webp" type="image/webp">
-                                            <img src="img/slider/autolong.jpg" alt="Рубеж ERP-система для управления шлаковым отвалом">
+                                            <img src="img/slider/autolong.jpg" alt="Автолонг ERP-система">
                                         </picture>
                                         <div class="overlay">
                                             <a href="docs/autolong.pdf" download>
@@ -277,7 +277,7 @@
                                     <div class="swiper-slide">
                                         <picture>
                                             <source srcset="img/slider/autolong-2.webp" type="image/webp">
-                                            <img src="img/slider/autolong-2.jpg" alt="Рубеж ERP-система для управления шлаковым отвалом">
+                                            <img src="img/slider/autolong-2.jpg" alt="Автолонг ERP-система">
                                         </picture>
                                         <div class="overlay">
                                             <a href="docs/autolong.pdf" download>
@@ -290,8 +290,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="presentation__text">Презентация проекта PDF 22.5 мб</p>
-                        </div> -->
+                            <p class="presentation__text">Презентация проекта PDF 1.3 мб</p>
+                        </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="nav-contact-tab">
