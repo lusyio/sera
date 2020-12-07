@@ -1,11 +1,44 @@
 // Slider
-const mySwiper = new Swiper(".swiper-container", {
+const frontierSlider = new Swiper("#frontier", {
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
     effect: "fade",
+    observer: true,
+    observeParents: true
 });
+
+const autolongSlider = new Swiper("#autolong", {
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    effect: "fade",
+    observer: true,
+    observeParents: true
+});
+
+const paperSlider = new Swiper("#paper", {
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    effect: "fade",
+    observer: true,
+    observeParents: true
+});
+
+const cuckooSlider = new Swiper("#cuckoo", {
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    effect: "fade",
+    observer: true,
+    observeParents: true
+});
+
 
 // Scroll
 const anchors = document.querySelectorAll('a[href*="#"]');

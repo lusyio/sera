@@ -62,6 +62,7 @@ function buildcopy() {
       'app/fonts/**/*.woff2',
       'app/favicon/*.ico',
       'app/img/**/*',
+      'app/docs/**/*',
    ], { base: 'app' })
    .pipe(dest('dist'));
 }

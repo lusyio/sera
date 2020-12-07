@@ -206,15 +206,15 @@
                             </p>
                         </div>
                         <div class="col-lg-6">
-                            <div class="swiper-container">
+                            <div id="frontier" class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <picture>
-                                            <source srcset="img/tabs/img.webp" type="image/webp">
-                                            <img src="img/tabs/img.png" alt="Presentation">
+                                            <source srcset="img/slider/frontier.webp" type="image/webp">
+                                            <img src="img/slider/frontier.jpg" alt="Рубеж ERP-система для управления шлаковым отвалом">
                                         </picture>
                                         <div class="overlay">
-                                            <a href="img/tabs/img.png" download>
+                                            <a href="docs/frontier.pdf" download>
                                                 <svg class="icon">
                                                     <use xlink:href="#download"></use>
                                                 </svg>
@@ -224,25 +224,11 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <picture>
-                                            <source srcset="img/tabs/img.webp" type="image/webp">
-                                            <img src="img/tabs/img.png" alt="Presentation">
+                                            <source srcset="img/slider/frontier-2.webp" type="image/webp">
+                                            <img src="img/slider/frontier-2.jpg" alt="Рубеж ERP-система для управления шлаковым отвалом">
                                         </picture>
                                         <div class="overlay">
-                                            <a href="img/tabs/img.png" download>
-                                                <svg class="icon">
-                                                    <use xlink:href="#download"></use>
-                                                </svg>
-                                                Скачать презентацию
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <picture>
-                                            <source srcset="img/tabs/img.webp" type="image/webp">
-                                            <img src="img/tabs/img.png" alt="Presentation">
-                                        </picture>
-                                        <div class="overlay">
-                                            <a href="img/tabs/img.png" download>
+                                            <a href="docs/frontier.pdf" download>
                                                 <svg class="icon">
                                                     <use xlink:href="#download"></use>
                                                 </svg>
@@ -252,49 +238,163 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="presentation__text">Презентация проекта PDF 1.3 мб</p>
+                            <p class="presentation__text">Презентация проекта PDF 22.5 мб</p>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="nav-profile-tab">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <h3>Ситуация «Завтра»</h3>
+                        <div class="col-lg-6">
                             <p>
-                                система автоматически рассчитывает дату ТО, визуализирует наличие запчастей
-                                на
-                                складе, техника обслуживается по плану, полная прозрачность процесса с
-                                ежедневным
-                                отчетом руквоводствуй
+                                Компания по продаже автозапчастей решила полностью автоматизировать и оцифровать процесс закупки и доставки
+                            </p>
+                            <h3>Ситуация «до»</h3>
+                            <p>
+                                Все документы ведутся в оффлайн режиме, долгий поиск необходимых документов, информация по всем заказам завязана на владельце компании
+                            </p>
+                            <h3>Ситуация «после»</h3>
+                            <p>
+                                Заказы формируются внутри системы, автоматическая генерация документов на каждом из этапов заказа и доставки, автоматизированное сравнение цен от поставщиков и выбор наилучшего
                             </p>
                         </div>
+                        <!-- <div class="col-lg-6">
+                            <div id="autolong" class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="img/slider/autolong.webp" type="image/webp">
+                                            <img src="img/slider/autolong.jpg" alt="Рубеж ERP-система для управления шлаковым отвалом">
+                                        </picture>
+                                        <div class="overlay">
+                                            <a href="docs/autolong.pdf" download>
+                                                <svg class="icon">
+                                                    <use xlink:href="#download"></use>
+                                                </svg>
+                                                Скачать презентацию
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="img/slider/autolong-2.webp" type="image/webp">
+                                            <img src="img/slider/autolong-2.jpg" alt="Рубеж ERP-система для управления шлаковым отвалом">
+                                        </picture>
+                                        <div class="overlay">
+                                            <a href="docs/autolong.pdf" download>
+                                                <svg class="icon">
+                                                    <use xlink:href="#download"></use>
+                                                </svg>
+                                                Скачать презентацию
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="presentation__text">Презентация проекта PDF 22.5 мб</p>
+                        </div> -->
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="nav-contact-tab">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <h3>Ситуация «Сегодня»</h3>
+                        <div class="col-lg-6">
                             <p>
-                                система автоматически рассчитывает дату ТО, визуализирует наличие запчастей
-                                на
-                                складе, техника обслуживается по плану, полная прозрачность процесса с
-                                ежедневным
-                                отчетом руквоводствуй
+                                Компания по разверстке документов задалась целью полностью автоматизировать ведение всего бизнес-процесса
                             </p>
+                            <h3>Ситуация «до»</h3>
+                            <p>
+                                Сотрудники обмениваются документами в Skype и Whatsapp, долгая проверка выполненных задач, сложно собрать проект воедино и передать клиенту
+                            </p>
+                            <h3>Ситуация «после»</h3>
+                            <p>
+                                Автоматическое распределение задач для 300 сотрудников на удаленке, проверка выполненных работ на каждом этапе, автоматическое формирование готового документа для заказчика
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div id="paper" class="swiper-container2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="img/slider/paper.webp" type="image/webp">
+                                            <img src="img/slider/paper.jpg" alt="Бумажка BPM-система электронного документооборота">
+                                        </picture>
+                                        <div class="overlay">
+                                            <a href="docs/paper.pdf" download>
+                                                <svg class="icon">
+                                                    <use xlink:href="#download"></use>
+                                                </svg>
+                                                Скачать презентацию
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="img/slider/paper-2.webp" type="image/webp">
+                                            <img src="img/slider/paper-2.jpg" alt="Бумажка BPM-система электронного документооборота">
+                                        </picture>
+                                        <div class="overlay">
+                                            <a href="docs/paper.pdf" download>
+                                                <svg class="icon">
+                                                    <use xlink:href="#download"></use>
+                                                </svg>
+                                                Скачать презентацию
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="presentation__text">Презентация проекта PDF 14.6 мб</p>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="nav-contact-tab">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <h3>Ситуация «Вчера»</h3>
+                        <div class="col-lg-6">
                             <p>
-                                система автоматически рассчитывает дату ТО, визуализирует наличие запчастей
-                                на
-                                складе, техника обслуживается по плану, полная прозрачность процесса с
-                                ежедневным
-                                отчетом руквоводствуй
+                                Охранная компания поставила перед собой задачу автоматизировать проверку всех сотрудников на постах
                             </p>
+                            <h3>Ситуация «до»</h3>
+                            <p>
+                                Штатные специалисты обзванивают каждый пост, с целью уточнить ситуацию на объекте и передать отчет руководству
+                            </p>
+                            <h3>Ситуация «после»</h3>
+                            <p>
+                                Система автоматически ведет ежечасный мониторинг каждого поста и моментально уведомляет руководителей о наличии проблемы на посту. Ведение аналитики по каждому сотруднику и объекту
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div id="cuckoo" class="swiper-container3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="img/slider/cuckoo.webp" type="image/webp">
+                                            <img src="img/slider/cuckoo.jpg" alt="Кукушка ERP-система для автоматизации работы охранного предприятия">
+                                        </picture>
+                                        <div class="overlay">
+                                            <a href="docs/cuckoo.pdf" download>
+                                                <svg class="icon">
+                                                    <use xlink:href="#download"></use>
+                                                </svg>
+                                                Скачать презентацию
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="img/slider/cuckoo-2.webp" type="image/webp">
+                                            <img src="img/slider/cuckoo-2.jpg" alt="Кукушка ERP-система для автоматизации работы охранного предприятия">
+                                        </picture>
+                                        <div class="overlay">
+                                            <a href="docs/cuckoo.pdf" download>
+                                                <svg class="icon">
+                                                    <use xlink:href="#download"></use>
+                                                </svg>
+                                                Скачать презентацию
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="presentation__text">Презентация проекта PDF 13.8 мб</p>
                         </div>
                     </div>
                 </div>
